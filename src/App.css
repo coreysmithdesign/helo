@@ -10,13 +10,16 @@
 .App {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  height: 100vw;
+  width: 100vw;
+  background: #f2f2f2;
 }
 
 /* AUTHENTICATION */
 .auth {
+  width: 100%;
   color: white;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,14 +86,9 @@
 }
 
 /* LOGGED IN */
-.logged-in {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
-
 .site-nav {
   width: 100px;
+  color: white;
   background-image: -webkit-gradient(linear,left bottom,left top,from(#ff7abe),to(#ff9770));
   background-image: -webkit-linear-gradient(bottom,#ff7abe,#ff9770);
   background-image: -o-linear-gradient(bottom,#ff7abe,#ff9770);

@@ -30,7 +30,6 @@ class Auth extends Component {
       })
       .catch(err => {
         alert('Could not log in')
-        console.log(err)
       })
   }
 
@@ -74,8 +73,6 @@ class Auth extends Component {
   }
 }
 
-const mapStateToProps = reduxState => reduxState
-
 const mapDispatchToProps = { loginUser }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Auth)
+export default connect(null, mapDispatchToProps)(Auth)

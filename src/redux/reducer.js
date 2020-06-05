@@ -1,7 +1,5 @@
 const initialState = {
-  username: "",
-  profile: "",
-  userid: 0,
+  user: {},
   isLoggedIn: false
 }
 
@@ -17,7 +15,7 @@ export function loginUser(user) {
 export default function (state = initialState, action) {
   switch (action.type) {
     case LOGIN_USER:
-      return { ...state, user: action.paload, isLoggedIn: true }
+      return { ...state, user: action.payload, isLoggedIn: true }
     default:
       return initialState
   }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './Nav';
 
 class Dashboard extends Component {
   constructor() {
@@ -22,8 +21,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className="logged-in">
-        <Nav />
+      <div>
         <div>
           <div className="post-search">
             <form action="">

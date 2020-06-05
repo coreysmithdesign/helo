@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './Nav';
 
 class Post extends Component {
   constructor() {
@@ -20,8 +19,7 @@ class Post extends Component {
 
   render() {
     return (
-      <div className="logged-in">
-        <Nav />
+      <div>
         <div>this is the Post component</div>
       </div>
     )
