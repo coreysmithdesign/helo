@@ -1,8 +1,10 @@
 import React from 'react';
 import routes from './routes';
+import { connect } from 'react-redux';
 import './App.css';
 
-function App() {
+function App(props) {
+  console.log("I'm the App", props)
   return (
     <div className="App">
       {routes}
@@ -10,4 +12,6 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = reduxState => reduxState
+
+export default connect(mapStateToProps)(App);
