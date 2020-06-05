@@ -22,6 +22,7 @@ app.use(
 // endpoints - users
 app.post('/api/auth/register', ctrl.register)
 app.post('/api/auth/login', ctrl.login)
+app.post('/api/auth/logout', ctrl.logout)
 
 // endpoints - posts
 app.get('/api/posts/:userid')
